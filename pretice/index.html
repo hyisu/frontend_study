@@ -5,7 +5,8 @@
         <meta charset="UTF-8>"
     </head>
     <body>
-        <form action="Result1.html" method="get">
+        <!-- 20230826 -->
+        <form action="Result1.html" method="post">
             <input type="text" name="st" value="이곳에 입력하세요"/><br/>
             <button type="reset" value="reset type">버튼리셋</button>
             <input type="submit" value="submit"/><br/>
@@ -13,5 +14,33 @@
             <input type="password" name="password"/><br/>
         </form>
     <hr/>
+    <!--20230827-->
+    <form action="Result1.html" method="get">
+        <textarea name="a1" cols="25" rows="5" style="resize: none"></textarea><br/>
+        <textarea name="a2" style="width: 250px; height: 50px;"></textarea><br/>
+        <hr/>
+        <fieldset style="width: 250px;"><legend>체크박스</legend>
+        <input type="checkbox" name="체크박스" value="1"/>체크박스1<br/>
+        <input type="checkbox" name="체크박스" value="2"/>체크박스2<br/>
+        <input type="checkbox" name="체크박스" value="3"/>체크박스3<br/>
+        <button type="submit">ok</button><br/>
+        </fieldset>
+        <hr/>
+        <fieldset style="width: 250px;"><legend>라디오</legend>
+            <input type="radio" name="라디오" value="1"/>라디오1<br/>
+            <input type="radio" name="라디오" value="2"/>라디오2<br/>
+            <input type="radio" name="라디오" value="3"/>라디오3<br/>
+        </fieldset>
+        <hr/>
+            <select name="항목">
+                <option value="1">항목1</option>
+                <option value="2">항목2</option>
+                <option value="o" selected="selected">선택됨</option>
+                <option value="3">항목3</option>
+        <hr/>
+        <input type="file" name="파일" accept="image*">
+        <hr/>
+        
+    </form>
     </body>
 </html> 
