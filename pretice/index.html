@@ -40,7 +40,25 @@
         <hr/>
         <input type="file" name="파일" accept="image*">
         <hr/>
-        
+    </form>
+    <!-- 20230830-->
+    <form action="Result1.html" method="post">
+        <input type="search" name="검색창"/><br/>
+        <input type="number" name="넘버" min="1" max="20" step="2"/><br/>
+        <input type="range" name="range" min="0" max="100" step="5"/><br/>
+        <input type="email" name="이메일"/><br/><!--@가 들어가야 다음페이지로 넘어감-->
+        <input type="url" name="url"/><br/><!--http://가 들어가야함-->
+        <br/>
+        <input type="datetime-local" name="날짜와시간"/>
+        <input type="date" name="날짜만"/>
+        <input type="month" name="달별로"/>
+        <input type="week" name="주별로"/>
+        <input type="time" name="시간"/>
+        <br/>
+        <input type="color" name="색깔"/>
+        <input type="tel" name="전화번호"/>
+        <br/>
+        <button type="submit">OK</button>
     </form>
     </body>
 </html> 
