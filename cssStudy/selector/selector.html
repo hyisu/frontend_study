@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>cssstudy</title>
+    <style>
+        /*
+        * {
+            color: darkblue;
+            font-style: italic;
+        }
+        *는 문서전체를 대상으로 함
+
+        body {
+            background-color: chocolate;
+            font-weight: bold;
+        } 
+        body는 body태그에 있는 것들을 대상으로 해서 *태그와 거의 같은 역할을 한다.
+        body가 눈에 보이는 부분이기 때문.
+        */
+
+        /*
+        p {
+            font-size: 25px;
+            font-weight: bold;
+            color: cornflowerblue;
+        }p태그만 골라 적용할 수 있음*/
+
+        /*
+        #id1 {
+            font-style: italic;
+            background-color: chartreuse;
+        }한 페이지에 하나의 정의로 하나의 태그만 사용할 수 있다*/
+
+        /*
+        .c1{
+            color: blue;
+        }
+        한 페이지에 반복적으로 사용되는 스타일을 정의할 수 있다*/
+
+        p {
+            background-color: aquamarine;
+        }
+
+        p.c1 {
+            color: rgb(219, 13, 13);
+        }/* p태그 내부에 c1클래스를 가지고 있는 태그 지정*/
+
+        div.c2 {
+            font-weight: bold;
+        }/* div태그 내부의 c2클래스를 가진 태그 지정*/
+
+        #i1 p {
+            font-style: italic;
+        } /*id가 i1인 태그안의 모든 p태그를 지정*/
+
+        #i1 > p {
+            background-color: coral;
+        } /*id가 i1인 태그 하위의 p태그 지정*/
+
+        .c3, .c4, .c5 {
+            color: brown;
+            background-color: darkorange;
+        }/* 클래스 세개 중 하나만 충족해도 적용됨*/
+    </style>
+</head>
+<body>
+    <p>p태그</p>
+    <div id="id1">id1태그를 포함한 div태그</div>
+    <hr/>
+    <p class="c1">첫 번째 p 태그,c1</p>
+    <p class="c2">두 번째 p 태그,c2</p>
+    <div class="c1">첫 번째 div 태그, c1</div>
+    <div class="c2">두 번째 div 태그, c2</div>
+    <hr/>
+    <div id="i1">
+        <div>
+            <p>id가 i1인 div태그 안의 div태그 내부의 p태그</p>
+        </div>
+        <p>id가 i1인 div태그안의 p태그</p>
+    </div>
+    <hr/>
+    <p class="c3">클래스 c3</p>
+    <p class="c4">클래스 c4</p>
+    <p class="c5">클래스 c5</p>
+</body>
+</html>
