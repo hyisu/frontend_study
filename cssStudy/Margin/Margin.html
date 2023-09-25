@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	.c1 {
+		border : 1px solid red;
+		margin-top : 50px;
+		margin-bottom : 50px;
+	}
+	.c2 {
+		border : 1px solid red;
+		margin-left : 50px;
+		margin-right : 50px;
+	}
+	.c3 {
+		border : 1px solid red;
+		margin : 50px; /*전체*/
+		margin : 50px 100px; /*상하, 좌우*/
+		margin : 50px 100px 150px; /*위, 좌우, 아래*/
+		margin : 50px 100px 150px 200px; /*상, 우, 하, 좌*/
+	}
+</style>
+</head>
+<body>
+	<img src="unknown.png"/><br/>
+	<img src="unknown.png" class="c1"/><br/>
+	<img src="unknown.png"/>
+	<hr/>
+	<img src="unknown.png"/>
+	<img src="unknown.png" class="c2"/>
+	<img src="unknown.png"/>
+	<hr/>
+	<img src="unknown.png"/><br/>
+	<img src="unknown.png" class="c3"/><br/>
+	<img src="unknown.png"/>
+	<hr/>
+	<img src="unknown.png"/>
+	<img src="unknown.png" class="c3"/>
+	<img src="unknown.png"/>
+</body>
+</html>
