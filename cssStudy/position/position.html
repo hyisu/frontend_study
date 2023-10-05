@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>cssstudy_position</title>
+<style>
+	.c1 {
+		width : 100px;
+		height : 100px;
+		border : 1px solid blue;
+		left : 100px;
+		top : 100px;
+		position : relative; /*요소 자기 자신의 원래 위치(static일 때의 위치)를 기준으로 배치*/
+	.c2 {
+		width : 100px;
+		height : 100px;
+		border : 1px solid red;
+		left : 100px;
+		top : 100px;
+		position : absolute; /*가장 가까운 위치에 있는 조상 요소를 기준으로 배치*/
+	}
+	.c3 {
+		width : 100px;
+		height : 100px;
+		background-color : green;
+		left : 100px;
+		top : 100px;
+		position : fixed; /*브라우저를 기준으로 하여 스크롤하여도 따라 움직인다.*/
+	}
+</style>
+</head>
+<body>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+	<div class="c1"></div>
+	<div class="c2"></div>
+	<div class="c3"></div>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+</body>
+</html>
