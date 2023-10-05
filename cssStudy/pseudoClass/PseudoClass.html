@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>cssstudy_pseudoclass</title>
+<style>
+ .c1:link {
+	color: red;
+	background-color: black;
+ } /*방문한 적이 없을 때, 초기설정*/
+
+  .c1:visited {
+	color: yellow;
+	 background-color: blue;
+  }/*방문한 적이 있을 때*/
+
+  .c1:hover{
+	color: firebrick;
+	background-color: lawngreen;
+ }/*마우스 올렸을 때*/
+
+ .c1:active{
+	color: wheat;
+	background-color: aqua;
+ }/*클릭했을 때*/
+
+ .c2:hover{
+	color: wheat;
+	background-color: aqua;
+ }
+
+ .c2:active{
+	border: 1px solid green;
+ }
+
+ .c3{
+	width: 200px;
+	height: 200px;
+	border: 1px solid black;
+ }
+
+ .c3:hover{
+	background-color: aqua;
+ }
+
+ .c3:active{
+	background-color: blue;
+ }
+
+ .c4:focus{
+	background-color: cornflowerblue;
+ }/*입력부분에 입력상태가 되었을 때*/
+
+ .c5 > li:first-child{
+	color: coral;
+ }/*제일 처음 항목만*/
+
+ .c5 > li:last-child{
+	color: chartreuse;
+ }/*제일 마지막 항목만*/
+
+ .c5 > li:nth-child(4){
+	color: rebeccapurple;
+ }/*지정된 항목만*/
+
+ .c5 > li:nth-child(2n+1){
+	border: 1px solid black;
+ }/*수식도 적용 가능*/
+
+  p:lang(kor){
+	color: red;
+  }/*언어를 지정하여 설정 가능*/
+  
+  p:lang(eng){
+	color: blue;
+  }
+</style>
+</head>
+<body>
+	<a href="#" class="c1">a태그</a><br/>
+	<img src="css.png" class="c2"><br/>
+	<div class="c3"></div><br/>
+	<input type="text" class="c4"/><br/>
+	<ul class="c5">
+		<li>항목1</li>
+		<li>항목2</li>
+		<li>항목3</li>
+		<li>항목4</li>
+		<li>항목5</li>
+		<li>항목6</li>
+	</ul><br/>
+	<p lang="kor">한국어</p><br/>
+	<p lang="eng">English</p>
+</html>
