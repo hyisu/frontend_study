@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>cssstudy_layer</title>
+<style>
+	.c1 {
+		width : 500px;
+		height : 100px;
+		background-color : red;
+		position : absolute;
+		left : 10px;
+		top : 10px;
+		z-index : 20; /*z-index값이 제일 큰 값이 위로 올라감*/
+	}
+	.c2 {
+		width : 500px;
+		height : 100px;
+		background-color : blue;
+		position : absolute;
+		left : 60px;
+		top : 60px;
+		z-index : 10;
+	}
+	.c3 {
+		width : 500px;
+		height : 100px;
+		background-color : green;
+		position : absolute;
+		left : 110px;
+		top : 110px;
+		z-index : 0;
+	}
+</style>
+</head>
+<body>
+	<div class="c1"></div>
+	<div class="c2"></div>
+	<div class="c3"></div>
+</body>
+</html>
