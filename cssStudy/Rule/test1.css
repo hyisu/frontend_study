@@ -1,0 +1,8 @@
+@charset "UTF-8";
+@import "test2.css";/*css파일에서 다른 css파일을 불러온다*/
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+.c1 {
+	color : red;
+	font-family: 'Ubuntu', sans-serif;
+}
