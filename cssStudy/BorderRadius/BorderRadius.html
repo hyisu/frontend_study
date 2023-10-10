@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>cssstudy_borderradius</title>
+<style>
+	.c1 {
+		border : 1px solid red;
+		width : 200px;
+		height : 200px;
+		border-top-left-radius : 20px;
+		border-top-right-radius: 20px;
+		border-bottom-left-radius : 20px;
+		border-bottom-right-radius : 20px;
+	}
+	
+	.c2 {
+		background-color : blue;
+		width : 200px;
+		height : 200px;
+		border-radius : 20px;
+		border-radius : 20px 30px; /* 좌상 우하, 우상 좌하 */ 
+		border-radius : 20px 30px 40px;  /* 좌상, 우상 좌하, 우하 */
+		border-radius : 20px 30px 40px 50px; /* 좌상, 우상, 우하, 좌하 */
+	}
+	
+	.c3 {
+		background-image : url(image/css3.png);
+		width : 200px;
+		height : 200px;
+		border-radius : 20px;
+	}
+	
+	.c4 {
+		border-radius : 100px;
+	}
+</style>
+</head>
+<body>
+	<div class="c1"></div>
+	<div class="c2"></div>
+	<div class="c3"></div>
+	<img src="image/css.png" class="c4"/>
+</body>
+</html>
