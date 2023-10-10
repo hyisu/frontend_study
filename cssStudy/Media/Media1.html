@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>cssstudy_mediaquery</title>
+<!--미디어쿼리는 웹페이지를 사용하는 화면의 종류에 따라
+css를 분기하는 용도로 사용한다-->
+<style>
+	.c1 {
+		font-size : 30px;
+	}
+	@media all {
+		.c1 {
+			color : red;
+		}
+	}
+	@media print {
+		.c1 {
+			font-style : italic
+		}
+	}/*프린트로 인쇄할 때*/
+	@media screen {
+		.c1 {
+			font-weight : bold;
+		}
+	} /*화면으로 볼 때*/
+</style>
+</head>
+<body>
+	<p class="c1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</body>
+</html>

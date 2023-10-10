@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>cssstudy_mediaquery</title>
+<style>
+	/* 테스크 탑 */
+	@media all and (min-width:1025px){
+		.c1, .c2 {
+			width : 400px;
+		}
+	}
+	/* 태블릿 */
+	@media all and (min-width:768px) and (max-width:1024px){
+		.c1, .c2 {
+			width : 300px;
+		}
+	}
+	/* 태블릿 & 데스크탑 */
+	@media all and (min-width:768px){
+	
+	}
+	/* 모바일 */
+	@media all and (max-width:767px){
+		.c1, .c2 {
+			width : 200px;
+		}
+	}
+</style>
+</head>
+<body>
+	<img src="image/css.png" class="c1"/>
+	<img src="image/css.png" class="c2"/>
+</body>
+</html>
