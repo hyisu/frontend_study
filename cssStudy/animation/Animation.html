@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>cssstudy_animation</title>
+<style>
+	@keyframes ani1 {
+		from {
+			background-color : red;
+			left : 0px;
+			top : 0px;
+			width : 200px;
+			height : 200px;
+			opacity : 1;
+		}
+		to {
+			background-color : blue;
+			left : 50px;
+			top : 50px;
+			width : 400px;
+			height : 400px;
+			opacity : 0;
+		}
+	}
+
+	.c1 {
+		width : 200px;
+		height : 200px;
+		background-color : red;
+		position : relative;
+	}
+	.c1:hover {
+		animation-name : ani1;
+		animation-duration : 5s;
+	}
+	
+	.c2 {
+		width : 200px;
+		height : 200px;
+		position : relative;
+		opacity : 1;
+		left : 0px;
+		top : 0px;
+		background-color : red;
+		transition : all 5s;
+	}
+	.c2:hover {
+		width  : 400px;
+		height : 400px;
+		left : 50px;
+		top : 50px;
+		opacity : 0;
+		background-color : blue;
+		transition : all 5s;
+	}
+</style>
+</head>
+<body>
+	<div class="c1"></div>
+	<hr/>
+	<div class="c2"></div>
+</body>
+</html>
