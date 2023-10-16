@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jsstudy_codecontrol_switch</title>
+</head>
+<body>
+	<script>
+		var a1 = 10;
+		
+		if(a1 == 20){
+			document.write("a1은 20입니다<br/>");
+		} else if(a1 == 10){
+			document.write("a1은 10입니다<br/>");
+		} else if(a1 == 0){
+			document.write("a1은 0입니다<br/>");
+		} else {
+			document.write("a1은 20, 10, 0이 아닙니다<br/>");
+		}
+		
+		switch(a1){
+		case 20 :
+			document.write("a1은 20입니다<br/>");
+			break;
+		case 10 :
+			document.write("a1은 10입니다<br/>");
+			break;//특정부분에서 끝내고 싶은 경우
+		case 0 :
+			document.write("a1은 0입니다<br/>");
+			break;
+		default :
+			document.write("a1은 20, 10, 0이 아닙니다<br/>");
+		}
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
