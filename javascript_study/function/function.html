@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jsstudy_Function</title>
+<script>
+	function f1(){
+		document.write("f1함수 호출<br/>");
+	}
+	
+	var f3 = function(){
+		document.write("익명함수 호출<br/>");
+	}
+</script>
+</head>
+<body>
+	<script>
+		f1();
+		
+		var f2 = f1;
+		f2();
+		
+		f3();
+	</script>
+</body>
+</html>

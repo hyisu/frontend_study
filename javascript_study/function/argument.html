@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jsstudy_Function_매개변수</title>
+<script>
+	function f10(a, b){
+		document.write("f10함수 호출<br/>");
+		document.write("a : " + a + "<br/>");
+		document.write("b : " + b + "<br/>");
+		document.write("<hr/>");
+	}
+	
+	function f20(){
+		document.write("f20함수 호출<br/>");
+		document.write("배열의 개수 : " + arguments.length + "<br/>");
+		for(var idx in arguments){
+			document.write(idx + " : " + arguments[idx] + "<br/>");
+		}
+		document.write("<hr/>");
+	}
+</script>
+</head>
+<body>
+	<script>
+		f10();
+		f10(10);
+		f10(10, 20);
+		f10(10, 20, 30, 40, 50);
+		
+		f20();
+		f20(10);
+		f20(10, 20);
+		f20(10, 20, 30, 40, 50);
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

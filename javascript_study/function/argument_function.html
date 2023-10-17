@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jsstudy_Function_함수 전달</title>
+<script>
+	function f1(f2){
+		f2();
+	}
+	
+	function f3(){
+		document.write("f3함수 호출<br/>");
+	}
+</script>
+</head>
+<body>
+	<script>
+		f1(f3);
+		
+		f1(function(){
+			document.write("익명함수 호출<br/>");
+		});
+	</script>
+</body>
+</html>
