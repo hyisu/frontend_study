@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>객체</title>
+<script>
+	var obj1 = {
+		a1 : 100,
+		"a2" : 11.11,
+		a3 : true,
+		a4 : "안녕하세요",
+		a5 : [10, 20, 30],
+		a6 : {
+			     b1 : 100,
+			     b2 : 200
+		     },
+		a7 : function(){
+				document.write("a7함수 호출<br/>");
+		     }
+	}
+</script>
+</head>
+<body>
+	<script>
+		document.write("obj1.a1 : " + obj1.a1 + "<br/>");
+		document.write("obj1.a2 : " + obj1.a2 + "<br/>");
+		document.write("obj1.a3 : " + obj1.a3 + "<br/>");
+		document.write("obj1.a4 : " + obj1.a4 + "<br/>");
+		for(var idx in obj1.a5){
+			document.write("obj1.a5 : " + obj1.a5[idx] + "<br/>");
+		}
+		document.write("obj1.a6.b1 : " + obj1.a6.b1 + "<br/>");
+		document.write("obj1.a6.b2 : " + obj1.a6.b2 + "<br/>");
+		obj1.a7();
+		
+		obj1.a1 = 5000;
+		document.write("obj1.a1 : " + obj1.a1 + "<br/>");
+		
+		obj1["a1"] = 10000;
+		document.write("obj1.a1 : " + obj1["a1"] + "<br/>");
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
