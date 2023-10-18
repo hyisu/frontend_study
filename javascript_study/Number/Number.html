@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JsStudy_Number</title>
+</head>
+<body>
+	<script>
+		if(Infinity > 100){
+			document.write("Infinity가 큽니다<br/>");
+		}
+		
+		if(Infinity < 100){
+			document.write("Infinity가 작습니다<br/>");
+		}
+		
+		var a1 = 2 / 0;
+		var a2 = -2 / 0;
+		document.write("a1 : " + a1 + "<br/>");
+		document.write("a2 : " + a2 + "<br/>");
+		document.write("<hr/>");
+		
+		var a3 = 100 - "abc";
+		document.write("a3 : " + a3 + "<br/>");
+		
+		var a4 = 100 - "10";
+		document.write("a4 : " + a4 + "<br/>");
+		//더하기 연산이 아닌 연산에서는 문자열안에 숫자가 있으면 자동으로 변환하여 연산을 진행함.
+		
+		var a5 = 100 - "abc";
+		if(isNaN(a5) == true){
+			document.write("a5는 숫자가 아닌 값이 들어있습니다<br/>");
+		} else {
+			document.write("a5 : " + a5 + "<br/>");
+		}
+		document.write("<hr/>");
+		
+		var a6 = "100";
+		var a7 = 100;
+		var a8 = a6 + a7;
+		document.write("a8 : " + a8 + "<br/>");
+		
+		var a9 = parseInt(a6)/*문자열로 구현된 숫자를 실제 숫자로 변환가능*/ + a7;
+		document.write("a9 : " + a9 + "<br/>");
+		
+		var a10 = "11.11";
+		var a11 = 11.11;
+		var a12 = parseFloat(a10)/*parseint의 실수 버전*/ + a11;
+		document.write("a12 : " + a12 + "<br/>");
+		
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
