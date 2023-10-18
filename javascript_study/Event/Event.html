@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JsStudy_Event</title>
+<style>
+	div {
+		border : 1px solid black;
+		width : 100px;
+		height : 100px;
+	}
+</style>
+<script>
+	function mouse_click(){
+		alert("마우스 클릭 이벤트 발생");
+	}
+	window.onload = function(){
+		var div = document.getElementById("test");
+		
+		div.onmouseover = function(){
+			alert("마우스가 올라왔습니다");
+		}
+	}
+</script>
+</head>
+<body>
+	<div onclick="mouse_click()"></div>
+	<div id="test"></div>
+</body>
+</html>
