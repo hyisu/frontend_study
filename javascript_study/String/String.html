@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JsStudy_String</title>
+</head>
+<body>	
+	<script>
+		var str1 = "abcde";
+		var str2 = '가나다라마';
+		
+		document.write("str1의 길이 : " + str1.length + "<br/>");
+		document.write("str2의 길이 : " + str2.length + "<br/>");
+		
+		var idx1 = str1.indexOf("bcd");
+		document.write("idx1 : " + idx1 + "<br/>");
+		
+		var idx2 = str1.indexOf("kkk");
+		document.write("idx2 : " + idx2 + "<br/>");
+		
+		var str3 = str1.substring(1, 3);
+		document.write("str3 : " + str3 + "<br/>");
+		
+		var str4 = "javascript html css";
+		var str5 = str4.replace("html", "jquery");
+		document.write("str5 : " + str5 + "<br/>");
+		
+		var str6 = "abCDef";
+		var str7 = str6.toUpperCase();
+		var str8 = str6.toLowerCase();
+		document.write("str7 : " + str7 + "<br/>");
+		document.write("str8 : " + str8 + "<br/>");
+		
+		var str9 = "abc";
+		var str10 = str9.concat("def");
+		var str11 = str9 + "def";
+		document.write("str10 : " + str10 + "<br/>");
+		document.write("str11 : " + str11 + "<br/>");
+		
+		var str12 = "10,20,30,40,50";
+		var str13 = str12.split(",");
+		
+		for(var idx in str13){
+			document.write("str13 : " + str13[idx] + "<br/>");
+		}
+	</script>
+</body>
+</html>
