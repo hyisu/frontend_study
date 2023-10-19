@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Jsstudy_Array_object</title>
+</head>
+<body>
+	<script>
+		var array1 = [10, 20, 30, 40, 50];
+		
+		//쉼표로 구분하여 하나의 문자열로 만듦
+		var a1 = array1.toString();
+		document.write("a1 : " + a1 + "<br/>");
+		
+		//지정된 문자열로 구분하여 하나의 문자열로 만듦듦
+		var a2 = array1.join("_");
+		document.write("a2 : " + a2 + "<br/>");
+		
+		document.write("<hr/>");
+		
+		var a3 = [];
+		document.write("a3.length : " + a3.length + "<br/>");
+		document.write("a3 : " + a3 + "<br/>");
+		document.write("<hr/>");
+		
+		a3[0] = 10;
+		a3[1] = 20;
+		document.write("a3.length : " + a3.length + "<br/>");
+		document.write("a3 : " + a3 + "<br/>");
+		document.write("<hr/>");
+		
+		//배열 뒤 새로운 멤버를 추가
+		a3.push(30);
+		a3.push(40);
+		a3.push(50, 60, 70, 80, 90, 100);
+		document.write("a3.length : " + a3.length + "<br/>");
+		document.write("a3 : " + a3 + "<br/>");
+		document.write("<hr/>");
+		
+		//제일 마지막 멤버를 반환하고 제거
+		var a4 = a3.pop();
+		document.write("a4 : " + a4 + "<br/>");
+		document.write("a3.length : " + a3.length + "<br/>");
+		document.write("a3 : " + a3 + "<br/>");
+		document.write("<hr/>");
+		
+		//배열의 제일 앞의 멤버를 반환하고 제거거
+		var a5 = a3.shift();
+		document.write("a5 : " + a5 + "<br/>");
+		document.write("a3.length : " + a3.length + "<br/>");
+		document.write("a3 : " + a3 + "<br/>");
+		document.write("<hr/>");
+		
+		//배열의 제일 앞에 맴버를 추가
+		a3.unshift(10);
+		document.write("a3.length : " + a3.length + "<br/>");
+		document.write("a3 : " + a3 + "<br/>");
+		document.write("<hr/>");
+		
+		var array3 = [50, 30, 10, 20, 40, 30, 80, 90];
+		var array4 = ["다", "바", "가", "나", "사", "바"];
+		
+		//오름차순으로 정렬
+		array3.sort();
+		array4.sort();
+		document.write("array3 : " + array3 + "<br/>");
+		document.write("array4 : " + array4 + "<br/>");
+		document.write("<hr/>");
+		
+		//역순으로 정렬
+		array3.reverse();
+		array4.reverse();
+		document.write("array3 : " + array3 + "<br/>");
+		document.write("array4 : " + array4 + "<br/>");
+	</script>
+</body>
+</html>
