@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Jsstudy_Dom1</title>
+<script>
+	function find_tagName(){
+		var div = document.getElementsByTagName("div");
+		
+		for(var idx in div){
+			div[idx].innerHTML = "태그로 검색";
+		}
+	}
+	
+	function find_id(){
+		var test1 = document.getElementById("test1");
+		var test2 = document.getElementById("test2");
+		
+		test1.innerHTML = "test1 id";
+		test2.innerHTML = "test2 id";
+	}
+	
+	function find_class(){
+		var class1 = document.getElementsByClassName("class1");
+		
+		for(var idx in class1){
+			class1[idx].innerHTML = "class 속성";
+		}
+	}
+</script>
+</head>
+<body>
+	<button onclick="find_tagName()">태그 이름</button>
+	<button onclick="find_id()">id 속성</button>
+	<button onclick="find_class()">class 속성</button>
+	<div id="test1" class="class1"></div>
+	<div id="test2" class="class1"></div>
+</body>
+</html>
