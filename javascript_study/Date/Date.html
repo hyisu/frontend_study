@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Jsstudy_Date</title>
+</head>
+<body>
+	<script>
+		var obj1 = new Date();
+		document.write("obj1 : " + obj1 + "<br/>");
+		
+		var obj2 = new Date(0);
+		document.write("obj2 : " + obj2 + "<br/>");
+		
+		var obj3 = new Date(93884902934);
+		document.write("obj3 : " + obj3 + "<br/>");
+		
+		//년, 월 , 일, 시, 분, 초, 밀리세컨드,
+		var obj4 = new Date(2030, 10, 9, 10, 33, 20, 500);
+		document.write("obj4 : " + obj4 + "<br/>");
+		
+		//가져오는 값
+		var year = obj4.getFullYear();
+		var month = obj4.getMonth() + 1;
+		var date = obj4.getDate();
+		var hour = obj4.getHours();
+		var minute = obj4.getMinutes();
+		var second = obj4.getSeconds();
+		var milli = obj4.getMilliseconds();
+		
+		document.write("year : " + year + "<br/>");
+		document.write("month : " + month + "<br/>");
+		document.write("date : " + date + "<br/>");
+		document.write("hour : " + hour + "<br/>");
+		document.write("minute : " + minute + "<br/>");
+		document.write("second : " + second + "<br/>");
+		document.write("milli : " + milli + "<br/>");
+	</script>
+</body>
+</html>
