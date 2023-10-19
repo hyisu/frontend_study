@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jsstudy_DOM_CreateElement</title>
+<script>
+	function createTag(){
+		var test1 = document.getElementById("test1");
+		
+		//태그와 그 속성을 만듦.
+		var tag_a = document.createElement("a");
+		tag_a.href = "https://lostark.game.onstove.com/Main";
+		tag_a.style.color = "red";
+		
+		var node_str = document.createTextNode("로스트아크");
+		tag_a.appendChild(node_str);
+		
+		var tag_img = document.createElement("img");
+		tag_img.src = "LostArk.png";
+		tag_a.appendChild(tag_img);
+		
+		
+		test1.appendChild(tag_a);
+	}
+</script>
+</head>
+<body>
+	<div id="test1"></div>
+	<button onclick="createTag()">태그 객체 만들기</button>
+</body>
+</html>

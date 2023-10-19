@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jsstudy_DOM_ innerHTML</title>
+<script>
+	function setHtml(){
+		var test1 = document.getElementById("test1");
+		
+		test1.innerHTML = "<a href='https://lostark.game.onstove.com/Main'>"
+		                + "<img src='LostArk.png'/>"
+		                + "</a>";
+	}
+</script>
+</head>
+<body>
+	<div id="test1"></div>
+	<button onclick="setHtml()">innerHTML 사용</button>
+</body>
+</html>
