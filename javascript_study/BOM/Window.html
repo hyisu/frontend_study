@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jsstudy_WindowObject</title>
+<script>
+	function getSize(){
+		var result = document.getElementById("result");
+		
+		result.innerHTML = "width : " + window.innerWidth + "<br/>"
+		                 + "height : " + window.innerHeight + "<br/>";
+	}
+	function show_alert(){
+		// window.alert("alert 메시지");	
+		alert("alert 메시지");
+	}
+	function show_confirm(){
+		var result = document.getElementById("result");
+		
+		// var chk = window.confirm("확인/취소 버튼을 눌러주세요");
+		var chk = confirm("확인/취소 버튼을 눌러주세요");
+		 
+		if(chk == true){
+			result.innerHTML = "확인 버튼을 눌렀습니다";
+		} else {
+			result.innerHTML = "취소 버튼을 눌렀습니다";
+		}
+	}
+	
+	function show_prompt(){
+		// var str = window.prompt("문자열을 입력해주세요", "기본 문자열");
+		var str = prompt("문자열을 입력해주세요", "기본 문자열");
+		
+		var result = document.getElementById("result");
+		result.innerHTML = "str : " + str;
+	}
+	function open_window(){
+		window.open("http://google.com", "_blank", "width=300, height=300, top=300, left=300");
+	}
+</script>
+</head>
+<body>
+	<div id="result"></div>
+	<button onclick="getSize()">화면 크기 파악하기</button>
+	<button onclick="show_alert()">alert</button>
+	<button onclick="show_confirm()">confirm</button>
+	<button onclick="show_prompt()">prompt</button>
+	<button onclick="open_window()">새창열기</button>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

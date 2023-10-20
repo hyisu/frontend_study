@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jsstudy_location</title>
+<script>
+	function get_href(){
+		var result = document.getElementById("result");
+		result.innerHTML = location.href;
+	}
+	
+	function set_href(){
+		location.href = "http://google.com";
+	}
+	
+	function use_replace(){
+		location.replace("http://google.com");
+	}
+</script>
+</head>
+<body>
+	<div id="result"></div>
+	<button onclick="get_href()">주소 가져오기</button>
+	<button onclick="set_href()">주소 설정하기(href)</button><!--기록이 남아 뒤로가기가 활성화됨.-->
+	<button onclick="use_replace()">주소 설정하기(replace)</button><!--뒤로가기가 활성화되지 않음-->
+</body>
+</html>

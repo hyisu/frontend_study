@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jsstudy_navigator</title>
+<script>
+	window.onload = function(){
+		var result = document.getElementById("result");
+		
+		result.innerHTML = "cookieEnabled : " + navigator.cookieEnabled + "<br/>"
+		                 + "appName : " + navigator.appName + "<br/>"
+		                 + "appCodeName : " + navigator.appCodeName + "<br/>"
+		                 + "product : " + navigator.product + "<br/>"
+		                 + "appVersion : " + navigator.appVersion + "<br/>"
+		                 + "userAgent : " + navigator.userAgent + "<Br/>";
+	}
+</script>
+</head>
+<body>
+	<div id="result"></div>
+</body>
+</html>
