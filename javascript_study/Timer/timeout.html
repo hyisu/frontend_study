@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JSstudy_Timer_Timeout</title>
+<script>
+	function btnClick(){
+		var test1 = document.getElementById("test1");
+		
+		setTimeout(function(){
+			var a1 = new Date();
+			test1.innerHTML = a1.toString();
+		}, 1000);
+	}
+</script>
+</head>
+<body>
+	<button onclick="btnClick()">Timeout 가동</button>
+	<div id="test1"></div>
+</body>
+</html>

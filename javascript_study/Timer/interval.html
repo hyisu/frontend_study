@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JSstudy_Timer_Interval</title>
+<script>
+	
+	var timer;
+
+	function start(){
+		var test1 = document.getElementById("test1");
+		
+		timer = setInterval(function(){
+			var obj1 = new Date();
+			test1.innerHTML += obj1.toString() + "<br/>";
+		}, 1000);
+	}
+	
+	function stop(){
+		clearInterval(timer);
+	}
+</script>
+</head>
+<body>
+	<button onclick="start()">interval start</button>
+	<button onclick="stop()">interval stop</button>
+	<div id="test1"></div>
+</body>
+</html>
+
+
+
+
+
+
+
+

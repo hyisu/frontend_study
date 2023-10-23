@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JSstudy_Timer_Loop</title>
+<script>
+	window.onload = function(){
+		var test1 = document.getElementById("test1");
+		
+		while(true){
+			var obj1 = new Date();
+			test1.innerHTML = obj1.toString();
+		}/*웹브라우저는 한 번에 하나밖에 처리하지 못하기 때문에
+		무한 반복문이 돌아갈 때에는 화면에 아무것도 띄우지 못함.
+		그렇기 때문에 Timer를 사용하는 것.*/
+	}
+</script>
+</head>
+<body>
+	<div id="test1"></div>
+</body>
+</html>
