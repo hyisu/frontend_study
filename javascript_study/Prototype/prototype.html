@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Prototype</title>
+<script>
+	function TestObject(){
+		this.a1 = 100;
+		this.a2 = 200;
+	}
+</script>
+</head>
+<body>
+	<script>
+		var obj1 = new TestObject();
+		var obj2 = new TestObject();
+		
+		document.write("obj1.a1 : " + obj1.a1 + "<br/>");
+		document.write("obj1.a2 : " + obj1.a2 + "<br/>");
+		document.write("obj2.a1 : " + obj2.a1 + "<br/>");
+		document.write("obj2.a2 : " + obj2.a2 + "<br/>");
+		
+		TestObject.prototype.a3 = 300;
+		
+		document.write("obj1.a3 : " + obj1.a3 + "<br/>");
+		document.write("obj2.a3 : " + obj2.a3 + "<br/>");
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
